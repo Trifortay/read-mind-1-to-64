@@ -1,8 +1,15 @@
 import random
-lst=[]
+numlst=[]
+binlst=[]
 for x in range(1,64):
-    lst.append(x)
+    numlst.append(x)
+
 #lst=[60, 33, 29, 55, 34, 36, 25, 58, 2, 53, 43, 19, 27, 7, 47, 22, 20, 11, 9, 37, 21, 28, 52, 32, 14, 35, 49, 23, 61, 18, 59, 16, 56, 44, 40, 10, 38, 4, 5, 17, 63, 26, 15, 50, 39, 48, 13, 12, 54, 57, 3, 51, 46, 41, 6, 45, 1, 30, 31, 8, 62, 42, 24]
 
-random.shuffle(lst)
-print(lst)
+
+for x in range(64):
+    x=format(x,"06b")
+    print(x)
+
+random.shuffle(numlst)
+print(numlst)
